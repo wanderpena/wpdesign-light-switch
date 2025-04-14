@@ -1,5 +1,6 @@
 
 import { ArrowUp } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -28,7 +29,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><a href="#services" className="text-muted-foreground hover:text-primary transition-colors">Servicios</a></li>
               <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">Nosotros</a></li>
-              <li><a href="#projects" className="text-muted-foreground hover:text-primary transition-colors">Proyectos</a></li>
+              <li><Link to="/projects" className="text-muted-foreground hover:text-primary transition-colors">Proyectos</Link></li>
               <li><a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Contacto</a></li>
             </ul>
           </div>
@@ -36,9 +37,9 @@ export default function Footer() {
           <div>
             <h3 className="font-medium mb-4">Legal</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Política de Privacidad</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Términos y Condiciones</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Política de Cookies</a></li>
+              <li><Link to="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">Política de Privacidad</Link></li>
+              <li><Link to="/terms-and-conditions" className="text-muted-foreground hover:text-primary transition-colors">Términos y Condiciones</Link></li>
+              <li><Link to="/cookie-policy" className="text-muted-foreground hover:text-primary transition-colors">Política de Cookies</Link></li>
             </ul>
           </div>
         </div>

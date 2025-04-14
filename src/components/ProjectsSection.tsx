@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 type Project = {
   title: string;
@@ -60,7 +61,9 @@ export default function ProjectsSection() {
       </div>
 
       <div className="flex justify-center mt-12">
-        <Button variant="outline" size="lg">Ver todos los proyectos</Button>
+        <Button variant="outline" size="lg" asChild>
+          <Link to="/projects">Ver todos los proyectos</Link>
+        </Button>
       </div>
     </section>
   );
